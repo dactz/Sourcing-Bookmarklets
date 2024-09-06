@@ -1,0 +1,3 @@
+// This will create a github user search for whatever text you have highlighted
+
+javascript:(function()%7Bvar text %3D ""%3Bif (window.getSelection) %7Btext %3D window.getSelection().toString()%3B%7D else if (document.selection %26%26 document.selection.type !%3D "Control") %7Btext %3D document.selection.createRange().text%3B%7Dwindow.open("https%3a%2f%2fwww.github.com%2fsearch?type=Users&q="%2Btext)%7D)()
